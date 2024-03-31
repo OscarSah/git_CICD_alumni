@@ -1,6 +1,7 @@
 describe('Button Elements Manipulation', () => {
 
     beforeEach(() => {
+        
         cy.clearCookies();
         cy.visit('/multiple_buttons');
     })

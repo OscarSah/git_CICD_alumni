@@ -23,11 +23,11 @@ describe('Context: My First Test Group', () => {
         expect(false).to.equal(false);
     })
 
-    xit('Test 3', () => {
+    it('Test 3', () => {
         expect(true).to.equal(true);
     })
 
-    it('Test 4', () => {
+    xit('Test 4', () => {
         expect(false).not.to.equal(true);
     })
 
@@ -35,7 +35,7 @@ describe('Context: My First Test Group', () => {
         expect(5).to.equal(5);
     })
 
-    it.skip('Test 6', () => {
+    it('Test 6', () => {
         expect(true).to.equal('5' == 5);
     })
 })

@@ -1,5 +1,6 @@
 describe('Find or Get Elements by Using Different Locators', () => {
     beforeEach('Navigate to Login Page', () => {
+        cy.viewport("iphone-x");
         cy.clearCookies();
         cy.visit('/login');
     })
