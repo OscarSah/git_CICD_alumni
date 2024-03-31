@@ -25,6 +25,8 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 import 'cypress-file-upload';
 
+import 'cypress-drag-drop';
+
 Cypress.Commands.add('textExists', (text) => {
     cy.contains(text).should('exist');
 })
