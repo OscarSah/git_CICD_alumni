@@ -28,8 +28,8 @@ import 'cypress-file-upload';
 import 'cypress-drag-drop';
 
 Cypress.Commands.add('textExists', (text) => {
-    cy.contains(text).should('exist');
-})
+  cy.contains(text).should('exist');
+});
 
 /**
  * textExists is our utility command or function, pass parameter which is text
