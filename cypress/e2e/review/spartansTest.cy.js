@@ -1,5 +1,6 @@
 describe('Verify that spartans end point returns expected values', () => {
-  it('Verify all spartans', () => {
+  qase(1, 
+    it('Verify all spartans', () => {
     // we cy.request function with parameters in it as JSON format
     cy.request({
       method: 'GET',
@@ -11,8 +12,10 @@ describe('Verify that spartans end point returns expected values', () => {
       expect(response.headers['content-type']).to.equal('application/json');
       expect(response.headers.connection).to.equal('keep-alive');
     });
-  });
-  it('Verify all spartans', () => {
+  })
+  );
+  qase(2, 
+  it('Verify query parameter spartans', () => {
     // we cy.request function with parameters in it as JSON format
     cy.request({
       method: 'GET',
@@ -26,5 +29,6 @@ describe('Verify that spartans end point returns expected values', () => {
       expect(response.status).to.equal(200);
       expect(response.body.content.length).to.equal(13); // to verify we have 13 elements in content array
     });
-  });
+  })
+  );
 });

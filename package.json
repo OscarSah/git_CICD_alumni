@@ -8,14 +8,18 @@
     "cy:cli": "cypress open",
     "cy:headless": "cypress run --headless -b chrome",
     "eslint": "eslint cypress",
-    "eslint-fix": "eslint cypress --fix"
+    "eslint-fix": "eslint cypress --fix",
+    "cy:qase":"QASE_REPORT=1 node cypress-with-qase.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cypress": "^13.3.0",
     "cypress-drag-drop": "^1.1.1",
-    "cypress-file-upload": "^5.0.8"
+    "cypress-file-upload": "^5.0.8",
+    "cypress-qase-reporter": "^1.4.3",
+    "dotenv": "^16.4.5",
+    "prompt": "^1.3.0"
   },
   "devDependencies": {
     "eslint": "^7.0.0",
