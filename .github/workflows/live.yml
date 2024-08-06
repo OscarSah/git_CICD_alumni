@@ -4,6 +4,9 @@ on:
     push:
         branches:
             - liveReview02
+    pull_request:
+        branches:
+            - liveReview02
 
 jobs: 
     cypress-run:
