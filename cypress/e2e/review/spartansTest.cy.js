@@ -4,7 +4,7 @@ describe('Verify that spartans end point returns expected values', () => {
     // we cy.request function with parameters in it as JSON format
     cy.request({
       method: 'GET',
-      url: 'http://3.84.34.15:8000/api/spartans',
+      url: 'http://3.84.109.78:8000/api/spartans',
     }).then((response) => {
       cy.log(response); // print to Cypress CLI
       expect(response.status).to.equal(200);
@@ -19,7 +19,7 @@ describe('Verify that spartans end point returns expected values', () => {
     // we cy.request function with parameters in it as JSON format
     cy.request({
       method: 'GET',
-      url: 'http://3.84.34.15:8000/api/spartans/search',
+      url: 'http://3.84.109.78:8000/api/spartans/search',
       qs: {
         gender: 'Female',
         nameContains: 'j',
